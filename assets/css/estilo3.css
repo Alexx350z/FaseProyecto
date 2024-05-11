@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.Caja_menu{
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 128, 255, 0.5);
+    text-align: center;
+    border:ridge 20px;
+    border-color: aquamarine;
+    padding: 10px;
+    margin-top: 30px;
+    outline: none;
+}
+
+.Caja_menu button{
+    padding: 10px 40px;
+    margin-top: 30px;
+    border: none;
+    font-size: 14px;
+    background: #0589fd;
+    color:white;
+    cursor: pointer;
+    outline: none;
+}
+
+
+table{
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 8.rem;
+    box-shadow:0 .4rem .8rem #0005;
+    width: 90%;
+}
+
+thead{
+    border-bottom: solid 5px #0f362d;
+
+}
+
+th, td {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(229, 3, 214, 0.067);
+    padding: 20px;
+}
+
+main button{
+    padding: 10px 40px;
+    margin-top: 30px;
+    border: none;
+    font-size: 14px;
+    background: #0589fd;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}

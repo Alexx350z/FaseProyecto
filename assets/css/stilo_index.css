@@ -1,0 +1,57 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f7fb; /* Azul claro */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor__registrar {
+    background-color: #ffffff; /* Blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario__rentrada {
+    text-align: center;
+}
+
+.formulario__rentrada label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #007bff; /* Azul */
+}
+
+.formulario__rentrada input[type="text"],
+.formulario__rentrada input[type="date"],
+.formulario__rentrada input[type="file"],
+.formulario__rentrada button {
+    width: calc(100% - 22px); /* Ajuste para el padding */
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #007bff; /* Azul */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario__rentrada button {
+    background-color: #007bff; /* Azul */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario__rentrada button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
