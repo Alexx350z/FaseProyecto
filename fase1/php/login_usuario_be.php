@@ -6,6 +6,20 @@ $correo2=$_POST['correo'];
 $contrasena=$_POST['contrasena'];
 
 
+$validar=$_POST['correo'];
+if( $validar == null || $validar = ''){
+    
+    echo '
+  <script>
+  alert("Ingrese correo por favor. ");
+  window.location = "../log.php";
+  </script>
+  ';
+  die();
+    
+  }
+
+
 $validar_login=mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo2'and contrasena='$contrasena'  and rol='cliente'");
 $validar_login2=mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo2'and contrasena='$contrasena' and rol='admin'");
 $validar_login3=mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$correo2'and contrasena='$contrasena' and rol='empresa'");
@@ -19,7 +33,7 @@ else{
     exit();
    }
    else{
-    header("location:../empresav.php");
+    header("location:../dbE.php");
     exit();
    }
    echo '

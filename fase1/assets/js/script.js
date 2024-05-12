@@ -96,3 +96,14 @@ function bala(){
     window.location.href="balance.php";
 }
 
+document.getElementById("btn_registrar_cupon").addEventListener("click", Reg);
+
+function Reg(){
+    window.location.href="empresav.php";
+}
+
+document.getElementById("btn_paginap").addEventListener("click", PaginaP);
+
+function PaginaP(){
+    window.location.href="clientev.php";
+}
