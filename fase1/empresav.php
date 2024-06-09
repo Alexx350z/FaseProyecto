@@ -34,6 +34,8 @@
                         <input type="number" id="cantidad_cupones" name="cantidad_cupones" min="1"><br><br>
                         <label for="descripcion">Descripción de la Oferta:</label><br>
                         <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+                        <label for="factura">Cupon(Foto):</label>
+                        <input type="file" name="archivo" accept="image/*" required>
                         <label for="estado">Estado de la Oferta:</label><br>
                         <select id="estado" name="estado" required>
                         <option value="disponible">Disponible</option>

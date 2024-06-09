@@ -29,8 +29,8 @@
             <div class="camisa__contenido">
                 <p>Maecenas consectetur ultricies mi vel venenatis. Curabitur risus tellus, congue non tellus at, semper dapibus turpis. Duis pellentesque, risus sit amet placerat porttitor, tortor augue volutpat ante, non dignissim odio ligula at arcu.</p>
 
-                <form class="formulario">
-                    <select class="formulario__campo">
+                <form action="php/pagop.php" method="POST" class="formulario">
+                    <select class="formulario__campo" name="cantidad">
                         <option disabled selected>-- Seleccionar Cantidad Cupones --</option>
                         <option>1</option>
                         <option>2</option>

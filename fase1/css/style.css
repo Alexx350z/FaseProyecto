@@ -37,6 +37,31 @@ img {
     height: 70%;
     image-rendering: optimizeQuality;
 }
+table{
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 8.rem;
+    box-shadow:0 .4rem .8rem #0005;
+    width: 90%;
+    text-decoration-color: #FFF;
+}
+thead{
+    border-bottom: solid 5px #0f362d;
+    border-radius: 5px;
+
+}
+
+th, td {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(229, 3, 214, 0.067);
+    padding: 20px;
+}
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -115,15 +140,32 @@ h3 {
 }
 .producto__precio {
     font-size: 2.8rem;
-    color: var(--secundario);
+    color: var(--blanco);
 }
 .producto__nombre,
+.producto_info
 .producto__precio {
     font-family: var(--fuentePrincipal);
-    margin: 1rem 0;
+   
     text-align: center;
-    line-height: 1.2;
+   
 }
+
+.producto__fecha{
+    font-family: var(--fuentePrincipal);
+    font-size: 2.8rem;
+    color: white;
+    text-align: center;
+}
+
+.producto__cupones{
+    font-family: var(--fuentePrincipal);
+    font-size: 2.8rem;
+    color: white;
+    text-align: center;
+}
+
+
 
 /** Graficos **/
 .grafico {
@@ -232,3 +274,4 @@ h3 {
     cursor: pointer;
     background-color: var(--secundarioOscuro);
 }
+

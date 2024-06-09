@@ -6,10 +6,11 @@
     <title>Cuponmania</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets\css\estilo3.css">
 </head>
 <body>
-    <header class="header">
+<main>
+<header class="header">
         <a href="index.php">
             <h1>Cuponmania SV</h1>
         </a>
@@ -19,22 +20,21 @@
         <a class="navegacion__enlace navegacion__enlace--activo" href="log.php">Iniciar Sesion/Registrarse</a>
         <a class="navegacion__enlace" href="nosotros.php">Nosotros</a>
     </nav>
+     
 
-    <main class="contenedor">
-        <h1>Nuestros Productos</h1>
-
-        
+   <h1>Datos guardados: </h1>
    <table href="producto.php">
 
    <thead>
    <tr>
-     <th class="producto__nombre">Entrada: </th><br>
-     <th class="producto__nombre">Precio: </th>
-     <th class="producto__nombre">Fecha Inicio: </th>
-     <th class="producto__nombre">Fecha Fin: </th>
-     <th class="producto__nombre">Disponibles: </th>
-     <th class="producto__nombre">Descripcion: </th>
-     <th class="producto__nombre">Factura: </th>
+     <th>Entrada: </th>
+     <th>Precio: </th>
+     <th>Fecha Inicio: </th>
+     <th>Fecha Fin: </th>
+     <th>Fecha Limite: </th>
+     <th>Disponibles: </th>
+     <th>Descripcion: </th>
+     <th>Factura: </th>
     </tr>
 
    </thead>
@@ -46,12 +46,13 @@ if ($result > 0) {
     while ($data = mysqli_fetch_array($query)) {
         ?>
         <tr>
-            <td class="producto__nombre"><a href="producto.php"><?php echo $data['Entrada'] ?></a></td>
-            <td class="producto__precio"><?php echo $data['Monto'] ?></td>
-            <td class="producto__nombre"><?php echo $data['Fecha'] ?></td>
-            <td class="producto__nombre"><?php echo $data['ffin'] ?></td>
-            <td class="producto__nombre"><?php echo $data['ccupones'] ?></td>
-            <td class="producto__nombre"><?php echo $data['descripción'] ?></td>
+            <td><a href="producto.php"><?php echo $data['Entrada'] ?></a></td>
+            <td><?php echo $data['Monto'] ?></td>
+            <td><?php echo $data['Fecha'] ?></td>
+            <td><?php echo $data['ffin'] ?></td>
+            <td><?php echo $data['flimite'] ?></td>
+            <td><?php echo $data['ccupones'] ?></td>
+            <td><?php echo $data['descripción'] ?></td>
             <td><img height="50px" src="data:image/jpg;base64,<?php echo base64_encode($data['Imagen']) ?>"></td>
         </tr>
         <?php
@@ -60,12 +61,10 @@ if ($result > 0) {
 ?>
     
    </table><br>
+   <button><a href="db.php">Regresar</a> </button>
 
-    </main>
 
-    <footer class="footer">
-        <p class="footer__texto">CuponMania SV - Todos los derechos Reservados 2024 &copy;</p>
-    </footer>
+</main> 
     
 </body>
 </html>
